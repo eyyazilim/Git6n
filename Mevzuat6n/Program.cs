@@ -15,6 +15,8 @@ builder.Services.LoadDataLayerExtension(builder.Configuration);
 builder.Services.LoadServiceLayerExtension();
 builder.Services.AddSession();
 
+
+
 builder.Services.AddControllersWithViews(opt =>
 {
     opt.Filters.Add<ArticleVisitorFilter>();
